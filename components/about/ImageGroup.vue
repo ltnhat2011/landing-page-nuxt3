@@ -1,10 +1,14 @@
 <template>
   <div class="background-container">
-    <img src="/about/Illustrator.png" alt="Illustrator" class="witch-animation">
+    <img
+      src="/about/Illustrator.png"
+      alt="Illustrator"
+      class="witch-animation"
+    />
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .background-container {
   @apply relative container mx-auto bg-[url('/about/earth.png')] bg-contain bg-no-repeat bg-center aspect-[2/1] w-full mt-56 md:mt-96;
 }
@@ -27,7 +31,6 @@
   }
 }
 
-/* Điều chỉnh keyframes cho màn hình medium */
 @media (max-width: 768px) {
   @keyframes elliptical-flight {
     0% {

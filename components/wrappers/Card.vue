@@ -3,15 +3,12 @@ export default {
   props: {
     game: Object,
   },
-}
+};
 </script>
 
 <template>
   <div id="game" class="card-container">
-    <div
-      class="card-image"
-      :style="{ backgroundImage: `url(${game?.img})` }"
-    >
+    <div class="card-image" :style="{ backgroundImage: `url(${game?.img})` }">
       <div class="card-content">
         <div class="card-text">
           <h2>
@@ -26,7 +23,7 @@ export default {
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .card-container {
   @apply relative bg-white rounded-lg overflow-hidden;
   @apply transform transition-transform duration-300;
@@ -51,7 +48,7 @@ export default {
 }
 
 .card-text {
-  @apply text-start px-[35px] pb-10 ;
+  @apply text-start px-[35px] pb-10;
   @apply transform transition-transform duration-300;
 }
 

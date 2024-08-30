@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineProps } from "vue";
 
 // eslint-disable-next-line unused-imports/no-unused-vars
 const props = defineProps({
@@ -15,7 +15,7 @@ const props = defineProps({
     type: Boolean,
     required: true,
   },
-})
+});
 </script>
 
 <template>
@@ -25,7 +25,7 @@ const props = defineProps({
         {{ count }}
       </p>
       <span v-if="isUserCount" class="user-count">
-        {{ $t('billion') }}
+        {{ $t("billion") }}
       </span>
       <span class="plus-sign">+</span>
     </div>
@@ -35,7 +35,7 @@ const props = defineProps({
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .count-display {
   @apply flex flex-col items-start;
 }
@@ -53,7 +53,7 @@ const props = defineProps({
 }
 
 .plus-sign {
-  @apply  text-[44px] leading-[54px] md:text-[80px] font-bold text-[#079BEE];
+  @apply text-[44px] leading-[54px] md:text-[80px] font-bold text-[#079BEE];
 }
 
 .label {
